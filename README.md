@@ -14,38 +14,67 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    flex-basis: 48%; /* Adjust the width of the columns as needed */
+    padding: 10px;
+  }
+
+  .section {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+</style>
+</head>
+<body>
+
 # My README File
 
-<div style="display: flex; justify-content: space-between;">
-
-<!-- Column 1 -->
-<div style="flex: 1; margin-right: 20px;">
+<div class="container">
+  <!-- Column 1 -->
+  <div class="column">
     
-## Section 1
-[![Icon 1](icon1.png)](link-to-icon1)
-1. Title 1
-   - Number: 42
+    <div class="section">
+      <img src="icon1.png" alt="Icon 1" class="icon"> **Title 1**
+      - Number: 42
+    </div>
 
-## Section 2
-[![Icon 2](icon2.png)](link-to-icon2)
-1. Title 2
-   - Number: 24
+    <div class="section">
+      <img src="icon2.png" alt="Icon 2" class="icon"> **Title 2**
+      - Number: 24
+    </div>
 
+  </div>
+
+  <!-- Column 2 -->
+  <div class="column">
+    
+    <div class="section">
+      <img src="icon3.png" alt="Icon 3" class="icon"> **Title 3**
+      - Number: 36
+    </div>
+
+    <div class="section">
+      <img src="icon4.png" alt="Icon 4" class="icon"> **Title 4**
+      - Number: 18
+    </div>
+
+  </div>
 </div>
 
-<!-- Column 2 -->
-<div style="flex: 1; margin-left: 20px;">
-
-## Section 3
-[![Icon 3](icon3.png)](link-to-icon3)
-1. Title 3
-   - Number: 36
-
-## Section 4
-[![Icon 4](icon4.png)](link-to-icon4)
-1. Title 4
-   - Number: 18
-
-</div>
-
-</div>
+</body>
+</html>
